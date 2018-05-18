@@ -1,0 +1,50 @@
+{
+    "language": {
+        "message": "ru"
+    },
+    "application_title": {
+        "message": "Улучшенная история Chrome"
+    },
+    "application_description": {
+        "message": "Замена встроенной истории Chrome этим улучшенным расширением"
+    },
+    "search_placeholder": {
+        "message": "Поиск в истории"
+    },
+    "search_display": {
+        "message": "Результаты поиска для"
+    },
+    "history_clear_all": {
+        "message": "Очистить все"
+    },
+    "search_btn": {
+        "message": "Поиск"
+    },
+    "warning_history_clear": {
+        "message": "Вы уверены, что хотите очистить всю историю?"
+    },
+    "history_date_empty": {
+        "message": "Этот день не имеет записей в истории"
+    },
+    "datepicker_go_today": {
+        "message": "Показать сегодня"
+    },
+    "created_by": {
+        "message": "Создано"
+    },
+    "history_view_more": {
+        "message": "Просмотреть всю историю"
+    },
+    "history_recent": {
+        "message": "Недавняя история"
+    },
+    "date_format": {
+        "message": "d mmmm yyyy, dddd"
+    },
+    "date_day_names": {
+        "message": "вс|пн|вт|ср|чт|пт|сб|воскресенье|понедельник|вторник|среда|четверг|пятница|суббота"
+    },
+    "date_month_names": {
+        "message": "янв|фев|мар|апр|май|июн|июл|авг|сен|окт|ноя|дек|января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря"
+    }
+}

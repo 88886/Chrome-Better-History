@@ -121,6 +121,15 @@ button:focus {
     -webkit-user-select: none;
 }
 
+.remove-single {
+    -webkit-user-select: none;
+    padding-right: 10px;
+}
+
+.remove-single:hover {
+    text-decoration: none;
+}
+
 #main .sidebar {
     padding: 20px;
     width: 282px;
@@ -145,6 +154,7 @@ button:focus {
     white-space: nowrap;
 }
 
+#container .row .remove-single,
 #container .row .date,
 #container .row .link,
 #container .row.empty span {

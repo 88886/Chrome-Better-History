@@ -23,6 +23,9 @@
     "warning_history_clear": {
         "message": "Are you sure that you want to clear all history?"
     },
+    "history_remove_single": {
+        "message": "Remove entry"
+    },
     "history_date_empty": {
         "message": "This day has no history entries"
     },

@@ -116,8 +116,9 @@ var historyResponse = function(results, start, end, scroll){
         $.each(v, function(id, item){
             if(id != 'empty'){
                 output+= '<span class="row" id="' + item[0] + '">';
+                output+= '<a class="remove-single" title="' + chrome.i18n.getMessage('history_remove_single') + '">⨯</a>';
                 output+= '<span class="date">' + new Date(parseFloat(id)).format('isoTime') + '</span>';
-                output+= '<a class="link" href="' + item[2] + '" target="_blank" style="' + getFavicon(item[2]) + '">' + (item[1] ? item[1] : item[2]) + '</a>';
+                output+= '<a class="link" href="' + escapeHtml(item[2]) + '" target="_blank" style="' + getFavicon(item[2]) + '">' + escapeHtml(item[1] ? item[1] : item[2]) + '</a>';
                 output+= '</span>';
             } else {
                 output+= '<span class="row empty"><span>';
@@ -156,6 +157,10 @@ var historyResponse = function(results, start, end, scroll){
         if(scroll && $('#container #' + k).length){
             $('#container').scrollTo('#' + k, { offsetTop: 91, duration: 0 });
         }
+        $('.remove-single', '#' + k).on('click', function(){
+            chrome.history.deleteUrl({url: $(this).parent().find('.link').attr('href')});
+            $(this).parent().remove();
+        })
     });
     if(is_searching && $('#container .loading').length){
         $('#container .loading').remove();
@@ -164,6 +169,19 @@ var historyResponse = function(results, start, end, scroll){
         $('html, body').height($('.sizable').height());
     }
     loading = false;
+};
+
+var removeSingle = function(obj){
+    console.log(obj);
+};
+
+var escapeHtml = function(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 };
 
 $(document).ready(function(){

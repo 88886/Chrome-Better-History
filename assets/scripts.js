@@ -117,7 +117,7 @@ var historyResponse = function(results, start, end, scroll){
             if(id != 'empty'){
                 output+= '<span class="row" id="' + item[0] + '">';
                 output+= '<span class="date">' + new Date(parseFloat(id)).format('isoTime') + '</span>';
-                output+= '<a class="link" href="' + item[2] + '" target="_blank" style="' + getFavicon(item[2]) + '">' + (item[1] ? item[1] : item[2]) + '</a>';
+                output+= '<a class="link" href="' + escapeHtml(item[2]) + '" target="_blank" style="' + getFavicon(item[2]) + '">' + escapeHtml(item[1] ? item[1] : item[2]) + '</a>';
                 output+= '</span>';
             } else {
                 output+= '<span class="row empty"><span>';
@@ -164,6 +164,15 @@ var historyResponse = function(results, start, end, scroll){
         $('html, body').height($('.sizable').height());
     }
     loading = false;
+};
+
+var escapeHtml = function(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 };
 
 $(document).ready(function(){

@@ -17,6 +17,9 @@
     "history_clear_all": {
         "message": "Vider l'historique"
     },
+    "history_remove_single": {
+        "message": "Supprimer l'entrée"
+    },
     "search_btn": {
         "message": "Rechercher"
     },

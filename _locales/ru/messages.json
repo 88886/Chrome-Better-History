@@ -23,6 +23,9 @@
     "warning_history_clear": {
         "message": "Вы уверены, что хотите очистить всю историю?"
     },
+    "history_remove_single": {
+        "message": "Удалить запись"
+    },
     "history_date_empty": {
         "message": "Этот день не имеет записей в истории"
     },

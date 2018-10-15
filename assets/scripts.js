@@ -15,7 +15,7 @@
  * and is licensed under the new BSD license.
  *
  * @package     Chrome Better History
- * @author      David Zeller <dev@zellerda.com>
+ * @author      DragonOfMercy <dragonofmercy@gmail.com>
  * @license     http://www.opensource.org/licenses/BSD-3-Clause New BSD license
  * @since       3.2
  */
@@ -169,10 +169,6 @@ var historyResponse = function(results, start, end, scroll){
         $('html, body').height($('.sizable').height());
     }
     loading = false;
-};
-
-var removeSingle = function(obj){
-    console.log(obj);
 };
 
 var escapeHtml = function(unsafe) {

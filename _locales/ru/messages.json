@@ -44,6 +44,9 @@
     "date_format": {
         "message": "d mmmm yyyy, dddd"
     },
+    "date_week_start": {
+        "message": "1"
+    },
     "date_day_names": {
         "message": "вс|пн|вт|ср|чт|пт|сб|воскресенье|понедельник|вторник|среда|четверг|пятница|суббота"
     },

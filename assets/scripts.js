@@ -17,12 +17,12 @@
  * @package     Chrome Better History
  * @author      DragonOfMercy <dragonofmercy@gmail.com>
  * @license     http://www.opensource.org/licenses/BSD-3-Clause New BSD license
- * @since       3.2
+ * @since       3.7
  */
 
 var now = new Date(), today = new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0,0), is_searching = false, loading = false;
 var getLanguage = function(){
-    return chrome.i18n.getMessage('language');
+    return chrome.i18n.getMessage('language').substr(0, 2);
 };
 
 var getContainerScrollHeight = function(){
@@ -201,6 +201,7 @@ $(document).ready(function(){
     } else {
         $('#datepicker').datetimepicker({
             timepicker: false,
+            dayOfWeekStart: parseInt(chrome.i18n.getMessage('date_week_start')),
             value: new Date(),
             maxDate: today,
             inline: true,

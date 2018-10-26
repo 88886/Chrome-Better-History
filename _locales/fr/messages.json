@@ -44,6 +44,9 @@
     "date_format": {
         "message": "dddd, d mmmm yyyy"
     },
+    "date_week_start": {
+        "message": "1"
+    },
     "date_day_names": {
         "message": "Dim|Lun|Mar|Mer|Jeu|Ven|Sam|Dimanche|Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi"
     },

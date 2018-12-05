@@ -17,7 +17,6 @@
  * @package     Chrome Better History
  * @author      DragonOfMercy <dragonofmercy@gmail.com>
  * @license     http://www.opensource.org/licenses/BSD-3-Clause New BSD license
- * @since       3.7
  */
 
 var now = new Date(), today = new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0,0), is_searching = false, loading = false;

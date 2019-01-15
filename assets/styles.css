@@ -96,6 +96,7 @@ button:focus {
     padding: 5px 10px;
     white-space: nowrap;
     display: flex;
+    height: 23px;
 }
 
 #history-summary-separator {

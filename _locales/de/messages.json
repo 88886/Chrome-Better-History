@@ -14,14 +14,8 @@
     "search_display": {
         "message": "Suchergebnisse für"
     },
-    "history_clear_all": {
-        "message": "Alles löschen"
-    },
     "search_btn": {
         "message": "Suche"
-    },
-    "warning_history_clear": {
-        "message": "Bist du sicher, dass du den gesamten Verlauf löschen möchtest?"
     },
     "history_remove_single": {
         "message": "Eintrag löschen"

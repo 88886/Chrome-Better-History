@@ -237,14 +237,6 @@ $(document).ready(function(){
             }
         });
 
-        $('#history-clear-all').on('click', function(){
-            if(confirm(chrome.i18n.getMessage('warning_history_clear'))){
-                chrome.history.deleteAll(function(){
-                    getHistoryByDay(today);
-                });
-            }
-        });
-
         $('#datepicker-today').on('click', function(){
             $('#datepicker').datetimepicker({value: new Date()});
             getHistoryByDay(today);

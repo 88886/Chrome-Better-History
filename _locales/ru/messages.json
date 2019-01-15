@@ -14,14 +14,8 @@
     "search_display": {
         "message": "Результаты поиска для"
     },
-    "history_clear_all": {
-        "message": "Очистить все"
-    },
     "search_btn": {
         "message": "Поиск"
-    },
-    "warning_history_clear": {
-        "message": "Вы уверены, что хотите очистить всю историю?"
     },
     "history_remove_single": {
         "message": "Удалить запись"

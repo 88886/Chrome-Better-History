@@ -14,14 +14,8 @@
     "search_display": {
         "message": "Search results for"
     },
-    "history_clear_all": {
-        "message": "Clear all"
-    },
     "search_btn": {
         "message": "Search history"
-    },
-    "warning_history_clear": {
-        "message": "Are you sure that you want to clear all history?"
     },
     "history_remove_single": {
         "message": "Remove entry"

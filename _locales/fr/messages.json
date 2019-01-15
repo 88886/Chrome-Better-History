@@ -14,17 +14,11 @@
     "search_display": {
         "message": "Résultats de recherche pour"
     },
-    "history_clear_all": {
-        "message": "Vider l'historique"
-    },
     "history_remove_single": {
         "message": "Supprimer l'entrée"
     },
     "search_btn": {
         "message": "Rechercher"
-    },
-    "warning_history_clear": {
-        "message": "Êtes-vous sûr de vouloir supprimer votre historique ?"
     },
     "history_date_empty": {
         "message": "Il n'y a pas d'entrée d'historique pour ce jour"

@@ -168,6 +168,8 @@ var historyResponse = function(results, start, end, scroll){
         $('html, body').height($('.sizable').height());
     }
     loading = false;
+
+    $('#search').focus();
 };
 
 var escapeHtml = function(unsafe) {
@@ -241,6 +243,8 @@ $(document).ready(function(){
             $('#datepicker').datetimepicker({value: new Date()});
             getHistoryByDay(today);
         });
+
+        $('#search').focus();
     }
 
 });

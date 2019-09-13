@@ -109,7 +109,8 @@ button:focus {
 }
 
 #history-summary-label,
-#history-summary-search {
+#history-summary-search,
+#history-summary-clear {
     display: none;
 }
 

@@ -17,6 +17,12 @@
     "search_btn": {
         "message": "Suche"
     },
+    "search_clear": {
+        "message": "[Alles im Suchergebnis löschen]"
+    },
+    "search_clear_confirm": {
+        "message": "Möchten Sie wirklich alle Einträge im Suchergebnis entfernen ?\nDieser Vorgang kann nicht rückgängig gemacht werden !"
+    },
     "history_remove_single": {
         "message": "Eintrag löschen"
     },

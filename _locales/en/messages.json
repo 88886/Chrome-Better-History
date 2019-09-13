@@ -17,6 +17,12 @@
     "search_btn": {
         "message": "Search history"
     },
+    "search_clear": {
+        "message": "[Clear all in search result]"
+    },
+    "search_clear_confirm": {
+        "message": "Are you sure you want to remove all entry in search result?\nThis operation cannot be undone!"
+    },
     "history_remove_single": {
         "message": "Remove entry"
     },

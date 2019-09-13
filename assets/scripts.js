@@ -33,6 +33,7 @@ var clearSearch = function(){
     $('#search').val('');
     $('#history-summary-label').hide();
     $('#history-summary-search').hide();
+    $('#history-summary-clear').hide();
     $('#datepicker').datetimepicker({minDate:false});
     is_searching = false;
 };
@@ -73,6 +74,7 @@ var search = function(){
         };
         $('#history-summary-label').css('display', 'inline-block');
         $('#history-summary-search').html(text).css('display', 'inline-block');
+        $('#history-summary-clear').css('display', 'inline-block');
         loading = true;
         chrome.history.search(query, function(results){
             historyResponse(results, dateStart, dateEnd, false);
@@ -92,6 +94,7 @@ var getFavicon = function(url){
 var historyResponse = function(results, start, end, scroll){
     var datas = {}, item_date, item_date_day;
     $.each(results, function(k, v){
+        console.log(v);
         item_date = new Date(v.lastVisitTime);
         item_date_day = new Date(item_date.getFullYear(),item_date.getMonth(),item_date.getDate(),0,0,0,0).getTime();
         if(start != undefined && end != undefined && !(item_date >= start && item_date <= end)){
@@ -246,6 +249,15 @@ $(document).ready(function(){
 
         $('#search').focus();
     }
+
+    $('#history-summary-clear').on('click', function(e){
+        e.preventDefault();
+        if(confirm(chrome.i18n.getMessage('search_clear_confirm'))){
+            $('.remove-single').each(function(){
+                $(this).click();
+            });
+        }
+    })
 
 });
 

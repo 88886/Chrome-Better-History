@@ -15,14 +15,13 @@
  * and is licensed under the new BSD license.
  *
  * @package     Chrome Better History
- * @author      David Zeller <dev@zellerda.com>
+ * @author      DragonOfMercy <dragonofmercy@gmail.com>
  * @license     http://www.opensource.org/licenses/BSD-3-Clause New BSD license
- * @since       3.2
  */
 
 var now = new Date(), today = new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0,0), is_searching = false, loading = false;
 var getLanguage = function(){
-    return chrome.i18n.getMessage('language');
+    return chrome.i18n.getMessage('language').substr(0, 2);
 };
 
 var getContainerScrollHeight = function(){
@@ -34,6 +33,7 @@ var clearSearch = function(){
     $('#search').val('');
     $('#history-summary-label').hide();
     $('#history-summary-search').hide();
+    $('#history-summary-clear').hide();
     $('#datepicker').datetimepicker({minDate:false});
     is_searching = false;
 };
@@ -74,6 +74,7 @@ var search = function(){
         };
         $('#history-summary-label').css('display', 'inline-block');
         $('#history-summary-search').html(text).css('display', 'inline-block');
+        $('#history-summary-clear').css('display', 'inline-block');
         loading = true;
         chrome.history.search(query, function(results){
             historyResponse(results, dateStart, dateEnd, false);
@@ -93,6 +94,7 @@ var getFavicon = function(url){
 var historyResponse = function(results, start, end, scroll){
     var datas = {}, item_date, item_date_day;
     $.each(results, function(k, v){
+        console.log(v);
         item_date = new Date(v.lastVisitTime);
         item_date_day = new Date(item_date.getFullYear(),item_date.getMonth(),item_date.getDate(),0,0,0,0).getTime();
         if(start != undefined && end != undefined && !(item_date >= start && item_date <= end)){
@@ -169,10 +171,8 @@ var historyResponse = function(results, start, end, scroll){
         $('html, body').height($('.sizable').height());
     }
     loading = false;
-};
 
-var removeSingle = function(obj){
-    console.log(obj);
+    $('#search').focus();
 };
 
 var escapeHtml = function(unsafe) {
@@ -205,6 +205,7 @@ $(document).ready(function(){
     } else {
         $('#datepicker').datetimepicker({
             timepicker: false,
+            dayOfWeekStart: parseInt(chrome.i18n.getMessage('date_week_start')),
             value: new Date(),
             maxDate: today,
             inline: true,
@@ -241,19 +242,22 @@ $(document).ready(function(){
             }
         });
 
-        $('#history-clear-all').on('click', function(){
-            if(confirm(chrome.i18n.getMessage('warning_history_clear'))){
-                chrome.history.deleteAll(function(){
-                    getHistoryByDay(today);
-                });
-            }
-        });
-
         $('#datepicker-today').on('click', function(){
             $('#datepicker').datetimepicker({value: new Date()});
             getHistoryByDay(today);
         });
+
+        $('#search').focus();
     }
+
+    $('#history-summary-clear').on('click', function(e){
+        e.preventDefault();
+        if(confirm(chrome.i18n.getMessage('search_clear_confirm'))){
+            $('.remove-single').each(function(){
+                $(this).click();
+            });
+        }
+    })
 
 });
 

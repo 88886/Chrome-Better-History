@@ -14,17 +14,17 @@
     "search_display": {
         "message": "Résultats de recherche pour"
     },
-    "history_clear_all": {
-        "message": "Vider l'historique"
-    },
     "history_remove_single": {
         "message": "Supprimer l'entrée"
     },
     "search_btn": {
         "message": "Rechercher"
     },
-    "warning_history_clear": {
-        "message": "Êtes-vous sûr de vouloir supprimer votre historique ?"
+    "search_clear": {
+        "message": "[Supprimer tout les elements ci-dessous]"
+    },
+    "search_clear_confirm": {
+        "message": "Êtes-vous sûr de vouloir supprimer tout les elements du résultat de recherche ?\nCette opération ne peut pas être annulée !"
     },
     "history_date_empty": {
         "message": "Il n'y a pas d'entrée d'historique pour ce jour"
@@ -43,6 +43,9 @@
     },
     "date_format": {
         "message": "dddd, d mmmm yyyy"
+    },
+    "date_week_start": {
+        "message": "1"
     },
     "date_day_names": {
         "message": "Dim|Lun|Mar|Mer|Jeu|Ven|Sam|Dimanche|Lundi|Mardi|Mercredi|Jeudi|Vendredi|Samedi"

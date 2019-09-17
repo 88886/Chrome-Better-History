@@ -14,14 +14,14 @@
     "search_display": {
         "message": "Search results for"
     },
-    "history_clear_all": {
-        "message": "Clear all"
-    },
     "search_btn": {
         "message": "Search history"
     },
-    "warning_history_clear": {
-        "message": "Are you sure that you want to clear all history?"
+    "search_clear": {
+        "message": "[Clear all in search result]"
+    },
+    "search_clear_confirm": {
+        "message": "Are you sure you want to remove all entry in search result?\nThis operation cannot be undone!"
     },
     "history_remove_single": {
         "message": "Remove entry"
@@ -43,6 +43,9 @@
     },
     "date_format": {
         "message": "dddd, mmmm d, yyyy"
+    },
+    "date_week_start": {
+        "message": "1"
     },
     "date_day_names": {
         "message": "Sun|Mon|Tue|Wed|Thu|Fri|Sat|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday"

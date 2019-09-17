@@ -14,14 +14,14 @@
     "search_display": {
         "message": "Результаты поиска для"
     },
-    "history_clear_all": {
-        "message": "Очистить все"
-    },
     "search_btn": {
         "message": "Поиск"
     },
-    "warning_history_clear": {
-        "message": "Вы уверены, что хотите очистить всю историю?"
+    "search_clear": {
+        "message": "[Очистить все в результатах поиска]"
+    },
+    "search_clear_confirm": {
+        "message": "Вы уверены, что хотите удалить все записи в результатах поиска ?\nЭта операция не может быть отменена!"
     },
     "history_remove_single": {
         "message": "Удалить запись"
@@ -43,6 +43,9 @@
     },
     "date_format": {
         "message": "d mmmm yyyy, dddd"
+    },
+    "date_week_start": {
+        "message": "1"
     },
     "date_day_names": {
         "message": "вс|пн|вт|ср|чт|пт|сб|воскресенье|понедельник|вторник|среда|четверг|пятница|суббота"

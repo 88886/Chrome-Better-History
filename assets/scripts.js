@@ -88,6 +88,7 @@ var search = function(){
 };
 
 var getFavicon = function(url){
+    url = escapeHtml(url);
     return 'background-image: -webkit-image-set(url(\'chrome://favicon/size/16@1x/' + url + '\') 1x, url(\'chrome://favicon/size/16@2x/' + url + '\') 2x)';
 };
 
@@ -178,8 +179,8 @@ var historyResponse = function(results, start, end, scroll){
 var escapeHtml = function(unsafe) {
     return unsafe
         .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
+        .replace(/</g, "&#x3C;")
+        .replace(/>/g, "&#x3E;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
 };

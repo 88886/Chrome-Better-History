@@ -6,7 +6,7 @@
         "message": "Chrome Better History"
     },
     "application_description": {
-        "message": "用这个更好用的历史记录扩展替换默认的Chrome历史记录。"
+        "message": "Chrome Better History比Chrome默认的历史记录查看更好用。"
     },
     "search_placeholder": {
         "message": "输入内容以便搜索历史记录"
@@ -15,7 +15,7 @@
         "message": "搜索结果"
     },
     "search_btn": {
-        "message": "搜索历史记录"
+        "message": "搜索"
     },
     "search_clear": {
         "message": "[清除所有搜索结果]"
@@ -30,16 +30,16 @@
         "message": "这一天没有历史记录"
     },
     "datepicker_go_today": {
-        "message": "显示今天的历史记录"
+        "message": "显示今日历史记录"
     },
     "created_by": {
-        "message": "开发者："
+        "message": "开发人员："
     },
     "history_view_more": {
         "message": "查看完整的历史记录"
     },
     "history_recent": {
-        "message": "最近的历史"
+        "message": "最近历史"
     },
     "date_format": {
         "message": "dddd, mmmm d, yyyy"

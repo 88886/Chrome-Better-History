@@ -597,3 +597,34 @@
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_monthselect{ left: 0; right: 1px }
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect{ left: 0 }
 .xdsoft_datetimepicker button { box-shadow: none !important; }
+
+@media (prefers-color-scheme: dark) {
+    .xdsoft_datetimepicker {
+        background-color: #2b2b2b;
+        border-color: transparent;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar th {
+        background-color: #2b2b2b;
+        border-color: #3b3b3b;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
+        background-color: #333333;
+        border-color: #3b3b3b;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div.xdsoft_current {
+        background-color: #6090b6;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_label {
+        background-color: #333333;
+        color: #aaaaaa;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
+        background-color: #2b2b2b;
+        border-color: #3b3b3b;
+    }
+}

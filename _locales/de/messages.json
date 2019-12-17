@@ -48,7 +48,7 @@
         "message": "1"
     },
     "date_day_names": {
-        "message": "Son|Mon|Die|Mit|Don|Fre|Sam|Sontag|Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag"
+        "message": "Son|Mon|Die|Mit|Don|Fre|Sam|Sonntag|Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag"
     },
     "date_month_names": {
         "message": "Jan|Feb|Mär|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez|Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember"

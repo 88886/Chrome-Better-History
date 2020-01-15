@@ -192,7 +192,6 @@ button:hover, button:focus {
 body.popup {
     margin: 0;
     padding: 0;
-    overflow: visible;
     -webkit-user-select: none;
 }
 

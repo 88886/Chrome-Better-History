@@ -95,7 +95,6 @@ var getFavicon = function(url){
 var historyResponse = function(results, start, end, scroll){
     var datas = {}, item_date, item_date_day;
     $.each(results, function(k, v){
-        console.log(v);
         item_date = new Date(v.lastVisitTime);
         item_date_day = new Date(item_date.getFullYear(),item_date.getMonth(),item_date.getDate(),0,0,0,0).getTime();
         if(start != undefined && end != undefined && !(item_date >= start && item_date <= end)){
